@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link rel="stylesheet" href="./styles/normalize.css" />
+    <link rel="stylesheet" href="./styles/styles.css" />
+
+    <title>Frontend Mentor | QR code component</title>
+
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <style>
+      .attribution {
+        font-size: 11px;
+        text-align: center;
+      }
+      .attribution a {
+        color: hsl(228, 45%, 44%);
+      }
+    </style>
+  </head>
+  <body>
+    <h1 class="main-heading">QR CODE GENERATOR</h1>
+    <main class="container">
+      <form class="form">
+        <div class="form-group">
+          <label for="text-reciever">Enter text to convert to QR</label>
+          <input type="text" id="text-reciever" placeholder="Enter text" />
+        </div>
+
+        <div class="form-group">
+          <label for="foreground">Choose Foreground color of QR</label>
+          <input type="color" value="#ffffff" id="foreground" />
+        </div>
+
+        <div class="form-group">
+          <label for="background">Choose Foreground color of QR</label>
+          <input type="color" value="#2c7dfa" id="background" />
+        </div>
+
+        <button class="submit" type="submit">CREATE QR</button>
+      </form>
+
+      <section class="card main">
+        <div class="card-head">
+          <img
+            class="img-qr"
+            src="https://image-charts.com/chart?chs=150x150&cht=qr&chl=Welcome%20to%20QR%20Generator&icqrf=ffffff&icqrb=2c7dfa&choe=UTF-8"
+            alt="qa-image"
+            loading="lazy"
+          />
+        </div>
+        <!-- <div class="card-body">
+          <h3 class="heading">
+            Improve your front-end skills by building projects
+          </h3>
+          <p class="text-body">
+            Scan the QR code to visit Frontend Mentor and take your coding
+            skills to the next level
+          </p>
+        </div> -->
+      </section>
+    </main>
+
+    <!-- <div class="attribution">
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+        >Frontend Mentor</a
+      >. Coded by <a href="#">Your Name Here</a>.
+    </div> -->
+    <script type="text/javascript" src="./script/script.js"></script>
+  </body>
+</html>
